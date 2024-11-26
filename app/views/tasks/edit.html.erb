@@ -1,0 +1,9 @@
+<%= form_with model: @task do |f| %>
+  <%= f.label :task %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :details %>
+  <%= f.select :completed, [["true"], ["false"], selected: "false"] %>
+  <%= f.submit %>
+<% end %>
